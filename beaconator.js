@@ -25,17 +25,18 @@ $(document).ready(function(){
 		opt +=       "<div class='input-group'>";
 		opt +=         "<input type='text' id='Option" + num_options + "' class='form-control' />";
 		opt +=		   "<span class='input-group-btn'>";
-		opt +=		     "<input type='button' id='clear" + num_options + "' class='btn red inline clear' value='&times;' />";
+		opt +=		     "<input type='button' id='clear" + num_options + "' class='btn red inline clear_option' value='&times;' />";
 		opt +=		   "</span>";
 		opt +=		 "</div>";
 		opt +=    "</div>";
 		$new_options.append(opt);
 	});
 
-	$('input.btn.red.inline.clear').click(function(){
-		alert("Testtest");
+	$(document).on('click', '.clear_option', clear);
 
-		var option_id = 3;
+	function clear(){
+		
+		var option_id = $(this).attr('id').value[5];
 
 		// Clear the input value
 		$("#Option" + option_id).val("");
@@ -49,7 +50,7 @@ $(document).ready(function(){
 
 		// Remove the last id
 
-	});
+	};
 
 	$beaconize.click(function(){
 
