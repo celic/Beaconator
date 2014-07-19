@@ -91,7 +91,7 @@ h2 > a {
 
 .btn.main {
 
-	width: 20%;
+	min-width: 20%;
 	margin-right: 0.5em;
 }
 
