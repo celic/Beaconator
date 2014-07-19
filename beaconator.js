@@ -3,6 +3,7 @@ $(document).ready(function(){
 
 	$options_list = $('#options_list');
 	$add_option = $('#add_option');
+	$beaconize = $(#'beaconize');
 	var num_options = 2;
 	var options = [];
 
@@ -14,5 +15,12 @@ $(document).ready(function(){
 
 		// Add preconfigured html to the page
 		$options_list.append("<div><label>Option " + num_options + "</label><input type='text' name='Option" + num_options + "' class='form-control' /></div>");
+	});
+
+	$beaconize.click(function(){
+
+		// Parse options into array
+
+		// Read beacon API
 	});
 });
