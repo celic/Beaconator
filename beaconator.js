@@ -6,8 +6,12 @@ $(document).ready(function(){
 	$add_option = $('#add_option');
 	$beaconize = $('#beaconize');
 	$reset = $('#reset');
+	$results = $('#results');
 	var num_options = 2;
 	var options = [];
+
+	// Hide results on page load
+	$results.hide();
 
 	// Adds a new option to the list
 	$add_option.click(function(){
@@ -39,6 +43,9 @@ $(document).ready(function(){
 		// Perform modulo
 
 		// Display results
+
+
+		$results.show();
 	});
 
 	$reset.click(function(){
@@ -48,5 +55,8 @@ $(document).ready(function(){
 
 		// Clear out added options
 		$new_options.empty();
+
+		// Hide results
+		$results.hide();
 	});
 });
