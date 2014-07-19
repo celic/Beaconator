@@ -28,7 +28,7 @@ $(document).ready(function(){
 		$new_options.append(opt);
 	});
 
-	$('.clear').click(funciton(){
+	$('.clear').click(function(){
 
 		// Remove that option
 	});
