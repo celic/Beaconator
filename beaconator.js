@@ -74,21 +74,18 @@ $(document).ready(function(){
 			url:"beacon.xml",
 			dataType:"xml",
 			success:function(data) {
-				alert('file read');
+				
+				// Convert hex to decimal
+
+				// Perform modulo
+
+				// Display results
+				
 			},
 			error:function(err) {
-				alert(err.status);
+				alert('error');
 			}
 		});
-
-		console.log('beaconize pressed');
-
-		// Convert hex to decimal
-
-		// Perform modulo
-
-		// Display results
-
 
 		$results.show();
 	});
