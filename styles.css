@@ -17,6 +17,13 @@ body {
 	border-radius: 5px;
 }
 
+@media (max-width: 767px) {
+
+	.card {
+		margin-top: 2.75em;
+	}
+}
+
 .card > h2 {
 
 	margin: 0;
