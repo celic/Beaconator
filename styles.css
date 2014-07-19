@@ -44,6 +44,13 @@ body {
 	border-color: #004800;
 }
 
+.btn.red {
+
+	background-color: #a6201c;
+	color: #fff;
+	border-color: #6e0000;
+}
+
 .gh-icon {
 	float: right;
 	color: #333;
