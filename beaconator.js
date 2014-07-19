@@ -36,6 +36,8 @@ $(document).ready(function(){
 
 		// Convert hex to decimal
 
+		// Perform modulo
+
 		// Display results
 	});
 
