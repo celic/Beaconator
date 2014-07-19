@@ -4,7 +4,7 @@ Beaconator
 A source of 'randomNIST'
 ------------------------
 
-This tool implements the National Institute of Standards and Technology Randomness Beacon project. The Randomness Beacon produces one of the most random numbers in 512 bit hex format every minute. More information on this project can be found [on the home page](http://beacon.nist.gov)
+This tool implements the National Institute of Standards and Technology Randomness Beacon project. The Randomness Beacon produces one of the most random numbers available in 512 bit hex format every minute. More information on this project can be found [on the home page](http://beacon.nist.gov)
 
 Authors
 -------
@@ -21,4 +21,4 @@ This is a single web page with JavaScript. A cronjob is run every minute to pull
 View the project
 ----------------
 
-The project is hosted on [OpenShift](beaconator-symboldev.rhcloud.com)
+The project is hosted on [OpenShift](http://beaconator-symboldev.rhcloud.com)
