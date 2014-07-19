@@ -43,6 +43,28 @@ body {
 	font-weight: 700;
 }
 
+.card.dark {
+
+	background-color: rgba(0, 0, 0, 0.2);
+	color: #888;
+
+	text-align: center;
+	padding: 1em;
+}
+
+.card.dark a {
+
+	text-decoration: none;
+	color: #888;
+
+	transition: color 0.5s ease;
+}
+
+.card.dark a:hover {
+
+	color: #fff;
+}
+
 .input-container {
 	margin-bottom: 1.75em;
 }
