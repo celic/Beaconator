@@ -1,9 +1,10 @@
 /* Beaconator js */
 $(document).ready(function(){
 
-	$options_list = $('#options_list');
+	$new_options = $('#new_options');
 	$add_option = $('#add_option');
-	$beaconize = $(#'beaconize');
+	$beaconize = $('#beaconize');
+	$reset = $('#reset');
 	var num_options = 2;
 	var options = [];
 
@@ -14,7 +15,7 @@ $(document).ready(function(){
 		num_options++;
 
 		// Add preconfigured html to the page
-		$options_list.append("<div><label>Option " + num_options + "</label><input type='text' name='Option" + num_options + "' class='form-control' /></div>");
+		$new_options.append("<div><label>Option " + num_options + "</label><input type='text' name='Option" + num_options + "' class='form-control' /></div>");
 	});
 
 	$beaconize.click(function(){
@@ -22,5 +23,18 @@ $(document).ready(function(){
 		// Parse options into array
 
 		// Read beacon API
+
+		// Convert hex to decimal
+
+		// Display results
+	});
+
+	$reset.click(function(){
+
+		// Shut. Down. Everything.
+		num_options = 2;
+
+		// Clear out added options
+		$new_options.empty();
 	});
 });
