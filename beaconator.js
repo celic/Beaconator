@@ -22,8 +22,12 @@ $(document).ready(function(){
 		// Add preconfigured html to the page
 		var opt = "<div>";
 		opt +=       "<label>Option " + num_options + "</label>";
-		opt +=       "<input type='button' id='clear" + num_options + "' class='clear' />";
-		opt +=       "<input type='text' id='Option" + num_options + "' class='form-control' />";
+		opt +=       "<div class='input-group'>";
+		opt +=         "<input type='text' id='Option" + num_options + "' class='form-control' />";
+		opt +=		   "<span class='input-group-btn'>";
+		opt +=		     "<button id='clear' class='btn red' type='button'>&times;</button>";
+		opt +=		   "</span>";
+		opt +=		 "</div>";1
 		opt +=    "</div>";
 		$new_options.append(opt);
 	});
