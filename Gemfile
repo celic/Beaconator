@@ -5,3 +5,6 @@ gem 'whenever'
 
 # Use Nokogiri to parse XML
 gem 'nokogiri'
+
+# Use Sinarta for Heroku
+gem 'sinatra'
