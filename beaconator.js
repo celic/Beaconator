@@ -20,7 +20,12 @@ $(document).ready(function(){
 		num_options++;
 
 		// Add preconfigured html to the page
-		$new_options.append("<div><label>Option " + num_options + "</label><input type='text' id='Option" + num_options + "' class='form-control' /></div>");
+		var opt = "<div>";
+		opt +=       "<label>Option " + num_options + "</label>";
+		opt +=       "<input type='button' id='clear" + num_options + "' class='clear' />";
+		opt +=       "<input type='text' id='Option" + num_options + "' class='form-control' />";
+		opt +=    "</div>";
+		$new_options.append(opt);
 	});
 
 	$beaconize.click(function(){
@@ -51,7 +56,16 @@ $(document).ready(function(){
 	$reset.click(function(){
 
 		// Shut. Down. Everything.
+		for(var i = 0; i < num_options; i++){
+
+			// Reset all option values
+			var option_id = "#Option" + i;
+			$(option_id).val("");
+		}
+
+		// Reset options
 		num_options = 2;
+		options = [];
 
 		// Clear out added options
 		$new_options.empty();
