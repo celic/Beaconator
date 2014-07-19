@@ -1,4 +1,4 @@
-set :output, "beacon.xml"
+set :output, "beacon"
 job_type :ruby_runner, 'cd :path && ruby :task :output'
 
 every 1.minute do 

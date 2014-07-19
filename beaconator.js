@@ -71,22 +71,27 @@ $(document).ready(function(){
 		// Read beacon API
 		$.ajax({
 			type:"GET",
-			url:"beacon.xml",
-			dataType:"xml",
+			url:"beacon",
+			contentType: "text/plain",
+			dataType:"text",
 			success:function(data) {
 				
+				console.log(data);
+
 				// Convert hex to decimal
 
 				// Perform modulo
 
-				// Display results
-				
+				// Append results
+
 			},
-			error:function(err) {
-				alert('error');
+			error:function(xhr, status, error) {
+				var err = eval("(" + xhr.responseText + ")");
+  				alert(err.Message);
 			}
 		});
 
+		// Display results
 		$results.show();
 	});
 
