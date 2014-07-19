@@ -34,7 +34,7 @@ $(document).ready(function(){
 
 	$(document).on('click', '.clear_option', function (sel){
 
-		alert("chris sucks cause the id is: " sel.target.id);
+		alert("chris sucks cause the id is: " + sel.target.id);
 		
 		var option_id = $(this).attr('id').value[5];
 
