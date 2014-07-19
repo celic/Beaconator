@@ -32,9 +32,9 @@ $(document).ready(function(){
 		$new_options.append(opt);
 	});
 
-	$(document).on('click', '.clear_option', clear);
+	$(document).on('click', '.clear_option', function (sel){
 
-	function clear(){
+		alert("chris sucks cause the id is: " sel.target.id);
 		
 		var option_id = $(this).attr('id').value[5];
 
@@ -50,7 +50,7 @@ $(document).ready(function(){
 
 		// Remove the last id
 
-	};
+	});
 
 	$beaconize.click(function(){
 
