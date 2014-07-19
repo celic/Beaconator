@@ -78,6 +78,12 @@ body {
 	margin-bottom: 0.75em;
 }
 
+.btn.main {
+
+	width: 20%;
+	margin-right: 0.5em;
+}
+
 .btn.blue {
 
 	background-color: #024b8a;
