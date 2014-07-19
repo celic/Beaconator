@@ -4,6 +4,8 @@
 		<title>Beaconator</title>
 		<link rel="stylesheet", type="text/css" href="styles.css" />
 		<link rel="stylesheet", type="text/css" href="assets/bootstrap.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="beaconator.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
@@ -12,7 +14,7 @@
 				<div class="card">
 					<h2>Beaconator</h2>
 					<form>
-						<div id="option_list">
+						<div id="options_list">
 							<div>
 								<label>Option 1</label>
 								<input type="text" name="Option1", class="form-control" />
@@ -22,7 +24,7 @@
 								<input type="text" name="Option2", class="form-control" />
 							</div>
 						</div>
-						<input type="button" value="Add Option", class="btn btn-primary" />
+						<input type="button" value="Add Option", class="btn btn-primary" id="add_option" />
 						<input type="submit" value="Beaconize", class="btn btn-success" />
 					</form>
 				</div>
