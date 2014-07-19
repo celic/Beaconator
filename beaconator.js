@@ -83,7 +83,7 @@ $(document).ready(function(){
 	$reset.click(function(){
 
 		// Shut. Down. Everything.
-		for(var i = 0; i <= num_options; i++){
+		for(var i = 1; i <= num_options; i++){
 
 			// Reset all option values
 			var option_id = "#Option" + i;
