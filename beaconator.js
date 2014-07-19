@@ -25,7 +25,7 @@ $(document).ready(function(){
 		opt +=       "<div class='input-group'>";
 		opt +=         "<input type='text' id='Option" + num_options + "' class='form-control' />";
 		opt +=		   "<span class='input-group-btn'>";
-		opt +=		     "<input id='clear" + num_options + "' class='btn red inline clear' type='button' value='&times;' />";
+		opt +=		     "<input type='button' id='clear" + num_options + "' class='btn red inline clear' value='&times;' />";
 		opt +=		   "</span>";
 		opt +=		 "</div>";
 		opt +=    "</div>";
