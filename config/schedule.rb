@@ -1,5 +1,6 @@
 set :output, "beacon.xml"
+job_type :ruby_runner, 'cd :path && ruby :task :output'
 
 every 1.minute do 
-	runner "ping_beacon"
+	ruby_runner "ping_beacon.rb"
 end
