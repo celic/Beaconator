@@ -31,6 +31,12 @@ h2 > a {
 .card.results {
 
 	margin: 0;
+	margin-bottom: 2em;
+}
+
+.card.info {
+
+	margin: 0;
 }
 
 .card.results > h2 {
