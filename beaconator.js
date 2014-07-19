@@ -86,7 +86,7 @@ $(document).ready(function(){
 				console.log("% " + options.length + " = " + selection);
 
 				// Append results
-				$('.decision').append(options[selection]);
+				$('.decision').html(options[selection]);
 
 			},
 			error:function(xhr, status, error) {
