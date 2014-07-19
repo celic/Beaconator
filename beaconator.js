@@ -69,6 +69,17 @@ $(document).ready(function(){
 		}
 
 		// Read beacon API
+		$.ajax({
+			url:"beacon.xml",
+			success:function(data) {
+				alert('file read');
+			},
+			error:function(err) {
+				alert('error');
+			}
+		});
+
+		console.log('beaconize pressed');
 
 		// Convert hex to decimal
 
