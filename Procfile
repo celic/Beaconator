@@ -1,1 +1,2 @@
-web: bundle exec ruby server.rb -p $PORT
+whenever --update-crontab
+web: bundle exec ruby server.rb
