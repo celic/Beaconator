@@ -1,6 +1,7 @@
 /* Beaconator js */
 $(document).ready(function(){
 
+	$option_area = $('#option_area');
 	$new_options = $('#new_options');
 	$add_option = $('#add_option');
 	$beaconize = $('#beaconize');
@@ -26,7 +27,9 @@ $(document).ready(function(){
 		// Parse options into array
 		for(var i = 0; i < num_options; i++){
 
+			var option_id = "#Option" + i;
 
+			options.push($option_area.find(option_id).value);
 		}
 
 		// Read beacon API
