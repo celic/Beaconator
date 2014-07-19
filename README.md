@@ -10,6 +10,7 @@ Authors
 -------
 
 Chris Celi - http://www.github.com/celic
+
 Andrew Rempe - http://www.github.com/arempe93
 
 Contact Us
