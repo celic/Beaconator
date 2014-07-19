@@ -24,6 +24,10 @@ body {
 	margin-bottom: 0.75em;
 }
 
+h2 > a {
+	text-shadow: 2px 2px rgba(0,0,0,0.2);
+}
+
 .card.results {
 
 	margin: 0;
