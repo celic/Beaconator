@@ -28,6 +28,11 @@ $(document).ready(function(){
 		$new_options.append(opt);
 	});
 
+	$('.clear').click(funciton(){
+
+		// Remove that option
+	});
+
 	$beaconize.click(function(){
 
 		// Clear out array
