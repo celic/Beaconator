@@ -3,6 +3,7 @@
 body {
 
 	background-image: url('assets/bg.png');
+	font-family: 'Open Sans', sans-serif;
 }
 
 .card {
@@ -10,7 +11,7 @@ body {
 	color: #333;
 
 	padding: 1.25em;
-	margin-top: 6em;
+	margin: 6em 0;
 
 	border-radius: 5px;
 }
@@ -41,4 +42,9 @@ body {
 	background-color: #298529;
 	color: #fff;
 	border-color: #004800;
+}
+
+.gh-icon {
+	float: right;
+	color: #333;
 }
