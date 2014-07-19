@@ -25,9 +25,9 @@ $(document).ready(function(){
 		opt +=       "<div class='input-group'>";
 		opt +=         "<input type='text' id='Option" + num_options + "' class='form-control' />";
 		opt +=		   "<span class='input-group-btn'>";
-		opt +=		     "<button id='clear' class='btn red' type='button'>&times;</button>";
+		opt +=		     "<button id='clear' class='btn red inline' type='button'>&times;</button>";
 		opt +=		   "</span>";
-		opt +=		 "</div>";1
+		opt +=		 "</div>";
 		opt +=    "</div>";
 		$new_options.append(opt);
 	});

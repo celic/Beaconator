@@ -77,6 +77,11 @@ body {
 	border-color: #880000;
 }
 
+.btn.red.inline {
+
+	border: none;
+}
+
 .gh-icon {
 	float: right;
 	color: #333;
