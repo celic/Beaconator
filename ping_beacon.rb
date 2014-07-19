@@ -2,7 +2,7 @@ require 'net/http'
 require 'nokogiri'
 
 # Clear previous output
-file = File.open "beacon.xml", "w"
+file = File.open "beacon", "w"
 file.truncate 0
 
 # Beacon url
@@ -15,4 +15,4 @@ xml = Net::HTTP.get_response(URI.parse(url)).body
 doc = Nokogiri::XML(xml)
 
 # Output beacon to file
-puts doc.at_xpath('//record').at_xpath('//outputValue').content
+puts doc.at_xpath('//record').at_xpath('//outputValue').content.to_i 16
