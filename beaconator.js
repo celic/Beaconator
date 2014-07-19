@@ -13,6 +13,6 @@ $(document).ready(function(){
 		num_options++;
 
 		// Add preconfigured html to the page
-		$options_list.append("<div><label>Option " + num_options + "</label><input type='text' name='Option" + num_options + "' /></div>");
+		$options_list.append("<div><label>Option " + num_options + "</label><input type='text' name='Option" + num_options + "' class='form-control' /></div>");
 	});
 });

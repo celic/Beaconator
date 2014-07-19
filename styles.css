@@ -11,4 +11,34 @@ body {
 
 	padding: 1.25em;
 	margin-top: 6em;
+
+	border-radius: 5px;
+}
+
+.card > h2 {
+
+	color: #024b8a;
+}
+
+.input-container {
+
+	margin-bottom: 0.95em;
+}
+
+.input-container input {
+	margin-bottom: 0.75em;
+}
+
+.btn.blue {
+
+	background-color: #024b8a;
+	color: #fff;
+	border-color: #002564;
+}
+
+.btn.green {
+
+	background-color: #298529;
+	color: #fff;
+	border-color: #004800;
 }
