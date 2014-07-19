@@ -6,5 +6,5 @@ gem 'whenever'
 # Use Nokogiri to parse XML
 gem 'nokogiri'
 
-# Use Sinarta for Heroku
+# Use Sinarta for HTTP Server
 gem 'sinatra'

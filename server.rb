@@ -1,7 +1,5 @@
-require 'webrick'
+require 'sinatra'
 
-server = WEBrick::HTTPServer.new :Port => ARGV[0]
-server.mount "/", WEBrick::HTTPServlet::FileHandler, './'
-
-trap('INT') { server.stop }
-server.start
+get '/' do
+	send_file 'index.html'
+end
