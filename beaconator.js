@@ -20,7 +20,7 @@ $(document).ready(function(){
 		num_options++;
 
 		// Add preconfigured html to the page
-		var opt = "<div>";
+		var opt = "<div id='opt" + num_options + "'>";
 		opt +=       "<label>Option " + num_options + "</label>";
 		opt +=       "<div class='input-group'>";
 		opt +=         "<input type='text' id='Option" + num_options + "' class='form-control' />";
@@ -34,22 +34,25 @@ $(document).ready(function(){
 
 	$(document).on('click', '.clear_option', function (sel){
 
-		alert("chris sucks cause the id is: " + sel.target.id);
-		
-		var option_id = $(this).attr('id').value[5];
+		// Slightly messy... deal with it		
+		var option_id = parseInt(sel.target.id[5]);
 
 		// Clear the input value
-		$("#Option" + option_id).val("");
+		//$("#Option" + option_id).val("");
 
 		// Move every value below that id up one spot
-		for(var i = option_id+1; i < num_options; i++){
+		for(var i = (option_id+1); i <= num_options; i++){
 
-			var input = $("#Option" + option_id).value;
-			$("#Option" + (option_id-1)).val(input);
+			var opt_id_first = "#Option" + (i-1);
+			var opt_id_second = "#Option" + i;
+
+			var opt_val = $(opt_id_second).val();
+			$(opt_id_first).val(opt_val);
 		}
 
 		// Remove the last id
-
+		$('#opt' + num_options).remove();
+		num_options--;
 	});
 
 	$beaconize.click(function(){
@@ -58,11 +61,11 @@ $(document).ready(function(){
 		options = [];
 
 		// Parse options into array
-		for(var i = 0; i < num_options; i++){
+		for(var i = 1; i <= num_options; i++){
 
 			var option_id = "#Option" + i;
 
-			options.push($option_area.find(option_id).value);
+			options.push($option_area.find(option_id).val());
 		}
 
 		// Read beacon API
