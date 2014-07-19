@@ -15,12 +15,19 @@ $(document).ready(function(){
 		num_options++;
 
 		// Add preconfigured html to the page
-		$new_options.append("<div><label>Option " + num_options + "</label><input type='text' name='Option" + num_options + "' class='form-control' /></div>");
+		$new_options.append("<div><label>Option " + num_options + "</label><input type='text' id='Option" + num_options + "' class='form-control' /></div>");
 	});
 
 	$beaconize.click(function(){
 
+		// Clear out array
+		options = [];
+
 		// Parse options into array
+		for(var i = 0; i < num_options; i++){
+
+
+		}
 
 		// Read beacon API
 
