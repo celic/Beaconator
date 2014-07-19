@@ -13,6 +13,11 @@ Chris Celi - http://www.github.com/celic
 
 Andrew Rempe - http://www.github.com/arempe93
 
+How It Works
+------------
+
+This is a single web page with JavaScript. Our web server deploys a cronjob every minute to pull the latest random number from http://beacon.nist.gov and stores the value on our server for quick access. This reduces the delay on the user because the NIST website can be rather slow. (It is a prototype still afterall) Then upon 'Beaconize' we take the number of options and modulo it against the 512 bit random number to come up with an answer. 
+
 Contact Us
 ----------
 
