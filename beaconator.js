@@ -70,12 +70,14 @@ $(document).ready(function(){
 
 		// Read beacon API
 		$.ajax({
+			type:"GET",
 			url:"beacon.xml",
+			dataType:"xml",
 			success:function(data) {
 				alert('file read');
 			},
 			error:function(err) {
-				alert('error');
+				alert(err.status);
 			}
 		});
 
