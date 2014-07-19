@@ -1,1 +1,14 @@
 /* Application style */
+
+body {
+
+	background-image: url('assets/bg.png');
+}
+
+.card {
+	background-color: rgba(255, 255, 255, 0.6);
+	color: #333;
+
+	padding: 1.25em;
+	margin-top: 6em;
+}

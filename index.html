@@ -3,22 +3,30 @@
 	<head>
 		<title>Beaconator</title>
 		<link rel="stylesheet", type="text/css" href="styles.css" />
-		<link rel="stylesheet", type="text/css" href="bootstrap/bootstrap.min.css" />
+		<link rel="stylesheet", type="text/css" href="assets/bootstrap.min.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
-		<h1>Beaconator</h1>
-		<form>
-			<div>
-				<p>Option 1:</p>
-				<input type="text" name="Option1" />
+		<div class="container">
+			<div class="col-xs-12 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+				<div class="card">
+					<h2>Beaconator</h2>
+					<form>
+						<div id="option_list">
+							<div>
+								<label>Option 1</label>
+								<input type="text" name="Option1", class="form-control" />
+							</div>
+							<div>
+								<label>Option 2</label>
+								<input type="text" name="Option2", class="form-control" />
+							</div>
+						</div>
+						<input type="button" value="Add Option", class="btn btn-primary" />
+						<input type="submit" value="Beaconize", class="btn btn-success" />
+					</form>
+				</div>
 			</div>
-			<div>
-				<p>Option 2:</p>
-				<input type="text" name="Option2" />
-			</div>
-			<input type="button" value="Add Option" />
-			<input type="submit" value="Beaconize" />
-		</form>
+		</div>
 	</body>
 </html>
