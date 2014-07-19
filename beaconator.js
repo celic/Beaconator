@@ -1,7 +1,7 @@
 /* Beaconator js */
 $(document).ready(function(){
 
-	$option_area = $('#option_area');
+	$option_area = $('#options_list');
 	$new_options = $('#new_options');
 	$add_option = $('#add_option');
 	$beaconize = $('#beaconize');
@@ -68,6 +68,8 @@ $(document).ready(function(){
 			options.push($option_area.find(option_id).val());
 		}
 
+		console.log(options[0]);
+
 		// Read beacon API
 		$.ajax({
 			type:"GET",
@@ -75,14 +77,16 @@ $(document).ready(function(){
 			contentType: "text/plain",
 			dataType:"text",
 			success:function(data) {
-				
+
 				console.log(data);
 
-				// Convert hex to decimal
-
 				// Perform modulo
+				var selection = (parseInt(data) % options.length) + 1;
+
+				console.log("% " + options.length + " = " + selection);
 
 				// Append results
+				$('.decision').append(options[selection]);
 
 			},
 			error:function(xhr, status, error) {
