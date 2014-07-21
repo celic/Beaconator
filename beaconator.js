@@ -81,7 +81,7 @@ $(document).ready(function(){
 				console.log(data);
 
 				// Perform modulo
-				var selection = (parseInt(data) % options.length) + 1;
+				var selection = (parseInt(data) % options.length);
 
 				console.log("% " + options.length + " = " + selection);
 
