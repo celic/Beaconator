@@ -6,6 +6,8 @@ A source of 'randomNIST'
 
 This tool implements the National Institute of Standards and Technology Randomness Beacon project. The Randomness Beacon produces one of the most random numbers available in 512 bit hex format every minute. More information on this project can be found [on the home page](http://beacon.nist.gov)
 
+Note: This project was not made in collaboration with NIST. We are not responsible for the uptime of the beacon, nor is NIST responsible for the uptime of a hosted Beaconator.
+
 Authors
 -------
 
@@ -22,3 +24,4 @@ View the project
 ----------------
 
 The project is hosted on [OpenShift](http://beaconator-symboldev.rhcloud.com)
+
