@@ -1,0 +1,3 @@
+mv ${OPENSHIFT_REPO_DIR}/.htaccess ${OPENSHIFT_REPO_DIR}/public/.htaccess
+
+chmod 644 ${OPENSHIFT_REPO_DIR}/public/.htaccess
