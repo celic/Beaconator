@@ -9,7 +9,6 @@ $(document).ready(function(){
 	$results = $('#results');
 	$about = $('#about');
 	$about_content = $('#about-content');
-	$about_link = $('#about-link');
 	var num_options = 2;
 	var options = [];
 
@@ -128,10 +127,7 @@ $(document).ready(function(){
 
 	$about.click(function(){
 	
-		// Hide link
-		$about-link.hide();
-
-		// Display about-content
-		$about_content.show();
+		// Smooth toggle
+		$about_content.slideToggle();
 	});
 });
