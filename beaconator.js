@@ -7,11 +7,16 @@ $(document).ready(function(){
 	$beaconize = $('#beaconize');
 	$reset = $('#reset');
 	$results = $('#results');
+	$about = $('#about');
+	$about_content = $('#about-content');
 	var num_options = 2;
 	var options = [];
 
 	// Hide results on page load
 	$results.hide();
+
+	// Hide about on page load
+	$about_content.hide();
 
 	// Adds a new option to the list
 	$add_option.click(function(){
@@ -118,5 +123,11 @@ $(document).ready(function(){
 
 		// Hide results
 		$results.hide();
+	});
+
+	$about.click(function(){
+	
+		// Smooth toggle
+		$about_content.slideToggle();
 	});
 });
