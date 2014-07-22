@@ -6,6 +6,15 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+.about-text {
+
+	padding-top:1em;
+	text-align: left;
+}
+
+.about-content {
+}
+
 .card {
 	background-color: rgba(255, 255, 255, 0.6);
 	color: #333;
