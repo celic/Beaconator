@@ -6,7 +6,7 @@ A source of 'randomNIST'
 
 The Beaconator takes the randomness of a National Institute of Standards and Technology project to decide things for you! Simply provide it the options it should choose from and then hit Beaconize.
 
-This tool implements the NIST Randomness Beacon project. The Randomness Beacon produces one of the most random numbers available in 512 bit hex format every minute. More information on this project can be found [on the home page](http://beacon.nist.gov) (Bear with me, it takes a little bit to load)
+This tool implements the NIST Randomness Beacon project. The Randomness Beacon produces one of the most random numbers available in 512 bit hex format every minute. More information on this project can be found [on the home page](http://beacon.nist.gov). (Bear with me, it takes a little bit to load)
 
 Note: This project was not made in collaboration with NIST. We are not responsible for the uptime of the beacon, nor is NIST responsible for the uptime of a hosted Beaconator.
 
