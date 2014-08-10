@@ -11,6 +11,9 @@ $(document).ready(function(){
 	$about_content = $('#about-content');
 	var num_options = 2;
 	var options = [];
+	var beacons_used = 0;
+	var random_string = "";
+	var beacon_string = "";
 
 	// Hide results on page load
 	$results.hide();
@@ -73,8 +76,6 @@ $(document).ready(function(){
 			options.push($option_area.find(option_id).val());
 		}
 
-		console.log(options[0]);
-
 		// Read beacon API
 		$.ajax({
 			type:"GET",
@@ -83,15 +84,26 @@ $(document).ready(function(){
 			dataType:"text",
 			success:function(data) {
 
-				console.log(data);
+				// Store data in string
+				random_string = data;
+
+				// Bounds check for multiple requests
+				if(beacons_used > 15){
+
+					beacons_used = 0;
+				}
+
+				// Parse 8 hex chars from string
+				beacon_string = random_string.substring(beacons_used*8, (beacons_used+1)*8);
 
 				// Perform modulo
-				var selection = (parseInt(data) % options.length);
-
-				console.log("% " + options.length + " = " + selection);
+				var selection = (parseInt(beacon_string) % options.length);
 
 				// Append results
 				$('.decision').html(options[selection]);
+
+				// Increment counter
+				beacons_used++;
 
 			},
 			error:function(xhr, status, error) {
