@@ -14,6 +14,7 @@ $(document).ready(function(){
 	var beacons_used = 0;
 	var random_string = "";
 	var beacon_string = "";
+	var beacon_value = 0;
 
 	// Hide results on page load
 	$results.hide();
@@ -98,8 +99,11 @@ $(document).ready(function(){
 				// Parse 8 hex chars from string
 				beacon_string = random_string.substring(beacons_used*8, (beacons_used+1)*8);
 
+				// Convert hex to decimal
+				beacon_value = parseInt(beacon_string, 16);
+
 				// Perform modulo
-				var selection = (parseInt(beacon_string) % options.length);
+				var selection = (beacon_value % options.length);
 
 				// Append results
 				$('.decision').html(options[selection]);
