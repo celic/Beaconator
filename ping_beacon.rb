@@ -15,4 +15,4 @@ file = File.open "beacon", "w"
 file.truncate 0
 
 # Output beacon to file
-puts doc.at_xpath('//record').at_xpath('//outputValue').content.to_i 16
+puts doc.at_xpath('//record').at_xpath('//outputValue').content
